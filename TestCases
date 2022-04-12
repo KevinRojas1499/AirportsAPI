@@ -1,0 +1,98 @@
+Test Cases 
+*************************************
+POST
+*************************************
+Airport 
+/airport
+
+{
+    "airportID":"BDF",
+    "id": 123, 
+    "flights": [
+        {
+        "flightNumber":1234,
+        "destinationAirportID":"LIR",
+        "departureTime":4
+        }
+    ]
+}
+
+AirportsById
+/airportsById
+
+[ "FKI","KTT","KIW","KLU","LMT","KLZ"]
+
+Airports
+/airports
+
+[
+{
+    "airportID":"BDF",
+    "id": 123, 
+    "departureFlights": [
+        {
+        "flightNumber":1,
+        "destinationAirportID":"LIR",
+        "departureTime":4
+        }
+    ]
+},
+{
+    "airportID":"KOA",
+    "id": 567, 
+    "departureFlights": [
+        {
+        "flightNumber":2,
+        "destinationAirportID":"LIR",
+        "departureTime":4
+        }
+    ]
+},
+{
+    "airportID":"LEK",
+    "id": 89, 
+    "departureFlights": [
+        {
+        "flightNumber":3,
+        "destinationAirportID":"LIR",
+        "departureTime":4
+        }
+    ]
+}
+]
+
+
+Flights
+/flights
+
+[
+{
+"flightNumber":123224,
+"originAirportID": "asdf",
+"destinationAirportID":"LIR",
+"departureTime":4
+},
+{
+"flightNumber":123,
+"originAirportID": "KOA",
+"destinationAirportID":"SJO",
+"departureTime":4
+},
+{
+"flightNumber":52,
+"originAirportID": "LIR",
+"destinationAirportID":"LIR",
+"departureTime":4
+}
+]
+
+
+*************************************
+DELETE
+*************************************
+
+
+
+
+
+
